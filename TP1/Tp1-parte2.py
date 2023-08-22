@@ -83,28 +83,28 @@ inverso = n4[::-1]
 print(f"El número invertido es: {inverso}")
 
 #14 
-A = int(input("Ingrese el valor de A: "))
-B = int(input("Ingrese el valor de B: "))
+a = int(input("Ingrese el valor de A: "))
+b = int(input("Ingrese el valor de B: "))
 
-aux = A
-A = B
-B = A
-print(f"Ahora el valor de B es {B} y el valor de A es {A}")
+aux = a
+a = b
+b = a
+print(f"Ahora el valor de B es {b} y el valor de A es {a}")
 
 #15 
 print("A continuacion complete con hora, minutos y segundos, la hora de partida")
-HH = int(input("Hora: "))
-MM = int(input("Minutos: "))
-SS = int(input("Segundos: "))
-T = int(input("Ingrese en segundos cuanto tiempo es el viaje: "))
+hh = int(input("Hora: "))
+mm = int(input("Minutos: "))
+ss = int(input("Segundos: "))
+t = int(input("Ingrese en segundos cuanto tiempo es el viaje: "))
 
-total_segundos = (HH * 3600)+ (MM * 60) + SS + T
+total_segundos = (hh * 3600)+ (mm * 60) + ss + T
 #Separamos "total_segundos" y almacenamos la nueva hora
-HH = total_segundos /3600
+hh = total_segundos /3600
 segundos_restantes = total_segundos % 3600
-MM = segundos_restantes /60
-SS = segundos_restantes % 60
-print(f"La hora de llegada es {HH}:{MM}:{SS}")
+mm = segundos_restantes /60
+ss = segundos_restantes % 60
+print(f"La hora de llegada es {hh}:{mm}:{ss}")
 
 #16
 nombre =input( "Ingrese su nombre ")
