@@ -50,6 +50,27 @@ val3 = float(input("Ingrese el tercer valor a promediar: "))
 promedio = (val1+val2+val3)/3
 print("El promedio de los números es: ", promedio)
 
+#7
+total_min = int(input("Ingrese la cantidad de minutos delos que quiere calcular las horas: "))
+horas = total_min/60
+minutos = total_min - (horas*60)
+print(f"Son {horas} horas y {minutos} minutos")
+
+#8
+sueldo = int(input("Ingrese su sueldo base"))
+venta1 = int(input("Ingrese el total de la primer venta: "))
+venta2 = int(input("Ingrese el total de la segundaventa: "))
+venta3 = int(input("Ingrese el total de la tercer venta: "))
+comision = (venta1+venta2+venta3)*0.10
+sueldo = sueldo +comision
+print(f"El sueldo de este mes corresponde a ${sueldo}")
+
+#9
+compra = float(input("Ingrese el total de su compra: $"))
+descuento = compra*0.15
+compra = compra-descuento
+print(f"Con el descuento su total es: ${compra}")
+
 #10
 parc1 = float(input("Nota del primer parcial: "))
 parc2 = float(input("Nota del segundo parcial: "))
