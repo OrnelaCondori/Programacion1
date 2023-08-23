@@ -98,7 +98,7 @@ mm = int(input("Minutos: "))
 ss = int(input("Segundos: "))
 t = int(input("Ingrese en segundos cuanto tiempo es el viaje: "))
 
-total_segundos = (hh * 3600)+ (mm * 60) + ss + T
+total_segundos = (hh * 3600)+ (mm * 60) + ss + t
 #Separamos "total_segundos" y almacenamos la nueva hora
 hh = total_segundos /3600
 segundos_restantes = total_segundos % 3600
