@@ -140,24 +140,28 @@ print(f"Ahora estás en la matrix , [{usuario}]")
 
 #18 
 cena = float(input("Costo de la cena: "))
-servicio = cena%6.2
-propina = cena%10
-total = cena + propina+servicio
+servicio = cena*0.062
+propina = cena%0.1
+total = cena + propina + servicio
 print("El total a pagar es: ", total)
 
 #19
-import datetime
 dia=int(input("Ingrese su dia de nacimiento: "))
 mes=int(input("Ingrese su mes de nacimiento: "))
 anio=int(input("Ingrese su anio de nacimiento: "))
-print(datetime.date(anio, mes, dia).strftime('%d/%m/%Y'))
+print("Su feche de nacimiento es: ", dia,"/", mes, "/",anio);
 
 #20
-import datetime
 dia=int(input("Ingrese su dia de nacimiento: "))
 mes=int(input("Ingrese su mes de nacimiento: "))
 anio=int(input("Ingrese su año de nacimiento: "))
-fecha=datetime.date(anio, mes, dia).strftime('%d/%m/%Y')
+dia= str(dia)
+mes = str(mes)
+anio = str(anio)
+fecha =""
+fecha += dia
+fecha += mes
+fecha += anio
 print(fecha)
 
 #21
