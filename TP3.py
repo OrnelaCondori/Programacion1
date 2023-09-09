@@ -1,86 +1,86 @@
-# #1
-# word = input("Ingrese una palabra y se le mostrara 10 veces: ")
-# for i in range(10):
-#     print(word)
+#1
+word = input("Ingrese una palabra y se le mostrara 10 veces: ")
+for i in range(10):
+    print(word)
 
-# #2
-# birthday_year = int(input("Ingrese su edad: "))
-# for year in range(birthday_year+1):
-#     if year != 0:
-#         print(year)
+#2
+birthday_year = int(input("Ingrese su edad: "))
+for year in range(birthday_year+1):
+    if year != 0:
+        print(year)
 
-# #3
-# positive_num = int(input("Ingrese un número positivo: "))
-# odd_numbers = ""
+#3
+positive_num = int(input("Ingrese un número positivo: "))
+odd_numbers = ""
 
-# for e in range (1,positive_num+1,1):
-#     if e%2!=0:
-#         odd_num = str(e)
-#         odd_numbers+=odd_num
-#         odd_numbers+=", "
-# print("Los números impares son: ", odd_numbers)
+for e in range (1,positive_num+1,1):
+    if e%2!=0:
+        odd_num = str(e)
+        odd_numbers+=odd_num
+        odd_numbers+=", "
+print("Los números impares son: ", odd_numbers)
 
-# #4
-# num= int(input("Ingrese un número entero positivo: "))
-# for r in range(num, -1,-1):
-#     print(r, end=", ")
-# print(" ")
+#4
+num= int(input("Ingrese un número entero positivo: "))
+for r in range(num, -1,-1):
+    print(r, end=", ")
+print(" ")
 
-# #5
-# investment=int(input("Ingrese cuanto desea invertir ")) 
-# annual_interest= int(input(" Cual es el interes anual ?  ")) 
-# year=int(input("Ingrese cuantos años desea invertir ")) 
+#5
+investment=int(input("Ingrese cuanto desea invertir ")) 
+annual_interest= int(input(" Cual es el interes anual ?  ")) 
+year=int(input("Ingrese cuantos años desea invertir ")) 
 
-# for y in range(year): 
-#     annual_earnings=(investment*annual_interest)/100 
-#     investment+= annual_earnings 
-#     print( f" En el año { y+1 } el usuario gano un { annual_earnings}") 
+for y in range(year): 
+    annual_earnings=(investment*annual_interest)/100 
+    investment+= annual_earnings 
+    print( f" En el año { y+1 } el usuario gano un { annual_earnings}") 
 
-# #6
-# heigth= int(input("Ingrese un numero para la altura de su triangulo: ")) 
-# for i in range(heigth+1): 
-#     print(" ") 
-#     for j in range(i): 
-#         print("*",end=" ") 
-# print(" ") 
+#6
+heigth= int(input("Ingrese un numero para la altura de su triangulo: ")) 
+for i in range(heigth+1): 
+    print(" ") 
+    for j in range(i): 
+        print("*",end=" ") 
+print(" ") 
 
-# #7
-# for i in range(1,11): 
-#     print(" ")
-#     print(f"tabla del {i}: ")
-#     for j in range(1,11): 
-#         multiplo = i*j
-#         print(multiplo, end=" ")
-# print(" ")
+#7
+for i in range(1,11): 
+    print(" ")
+    print(f"tabla del {i}: ")
+    for j in range(1,11): 
+        multiplo = i*j
+        print(multiplo, end=" ")
+print(" ")
 
-# #8
-# n=int(input("introduce la altura del triangulo (entero positivo):")) 
-# for i in range(1 , n+1 , 2): 
-#     for j in range(i, 0 ,-2): 
-#         print(j, end=" ") 
-#     print(" ")  
+#8
+n=int(input("introduce la altura del triangulo (entero positivo):")) 
+for i in range(1 , n+1 , 2): 
+    for j in range(i, 0 ,-2): 
+        print(j, end=" ") 
+    print(" ")  
 
-# #9
-# password="contraseña" 
-# password2="u" 
-# while (password!=password2):  
-#     password2= input("ingrese la contraseña: ").lower() 
+#9
+password="contraseña" 
+password2="u" 
+while (password!=password2):  
+    password2= input("ingrese la contraseña: ").lower() 
 
-# #10
-# while True:
-#     num = int(input("Ingrese un número positivo, para indicar si es o no primo: "))
-#     if num<=0:
-#         break
+#10
+while True:
+    num = int(input("Ingrese un número positivo, para indicar si es o no primo: "))
+    if num<=0:
+        break
 
-#     divider = 0
-#     for i in range(num):
-#         if num%(i+1) == 0 :
-#             divider += 1
+    divider = 0
+    for i in range(num):
+        if num%(i+1) == 0 :
+            divider += 1
     
-#     if divider == 2:
-#         print("Es un número primo")
-#     else:
-#         print("No es primo")
+    if divider == 2:
+        print("Es un número primo")
+    else:
+        print("No es primo")
 
 #11
 word=input("Ingrese una palabra: ")
