@@ -151,18 +151,12 @@ mes=int(input("Ingrese su mes de nacimiento: "))
 anio=int(input("Ingrese su anio de nacimiento: "))
 print("Su feche de nacimiento es: ", dia,"/", mes, "/",anio);
 
-#20
-dia=int(input("Ingrese su dia de nacimiento: "))
-mes=int(input("Ingrese su mes de nacimiento: "))
-anio=int(input("Ingrese su año de nacimiento: "))
-dia= str(dia)
-mes = str(mes)
-anio = str(anio)
-fecha =""
-fecha += dia
-fecha += mes
-fecha += anio
-print(fecha)
+20
+completo=input("Ingrese su dia de nacimiento: en el formato DDMMAAAA: "))
+dia=completo[:2]
+mes=completo[2:4]
+anio=completo[4:]
+print(f"Su día de nacimiento es {dia}/{mes}/{anio}")
 
 #21
 km_por_litro=int(input("cuantos kilometros puede recorrer su vehículo con 1 litro de combustible: "))
