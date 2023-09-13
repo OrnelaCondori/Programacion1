@@ -91,8 +91,8 @@ else :
     print("Debe pagar $1000")
 
 #11
-pizza=input("Desea una pizza vegetariana ? (SI/NO) : ").upper()
-if pizza=="SI":
+pizza=int(input("Desea una pizza vegetariana ?     1.si / 2.no: "))
+if pizza==1:
     print(" Ingredientes disponibles: \n pimiento \n tofu ")
     ingredientes=input(" Ingrediente elegido : ").lower()
 else : 
