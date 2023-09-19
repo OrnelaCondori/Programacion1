@@ -151,7 +151,7 @@ mes=int(input("Ingrese su mes de nacimiento: "))
 anio=int(input("Ingrese su anio de nacimiento: "))
 print("Su feche de nacimiento es: ", dia,"/", mes, "/",anio);
 
-20
+#20
 completo=input("Ingrese su dia de nacimiento: en el formato DDMMAAAA: "))
 dia=completo[:2]
 mes=completo[2:4]

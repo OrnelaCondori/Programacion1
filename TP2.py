@@ -91,8 +91,9 @@ else :
     print("Debe pagar $1000")
 
 #11
-pizza=int(input("Desea una pizza vegetariana ?     1.si / 2.no: "))
-if pizza==1:
+pizza=input("Desea una pizza vegetariana ? (SI/NO) : ").upper()
+
+if pizza=="SI":
     print(" Ingredientes disponibles: \n pimiento \n tofu ")
     ingredientes=input(" Ingrediente elegido : ").lower()
 else : 
@@ -128,10 +129,13 @@ else:
 #14
 a= int(input("ingrese el número a: "))
 b= int(input("ingrese el número b: "))
-print(f"{a}x+{b}=0")
-x= -b / a
-print(f"x=-{b}/{a}")
-print("el resultado de su ecuacion es ",x)
+if a == 0:
+    print("la ecucion no tiene solucion")
+else:
+    print(f"{a}x+{b}=0")
+    x= -b / a
+    print(f"x=-{b}/{a}")
+    print("el resultado de su ecuacion es ",x)
 
 #15
 forma=input("Desea sacar el area de un triangulo o un circulo? ingrese 't' para triangulo y 'c' para circulo: ")
@@ -198,13 +202,12 @@ print(f"Salario total: ${sal_total}")
 cantidad_lapiz=int(input("Ingrese la cantidad de lapices a comprar: "))
 costo_lapiz=60
 
+sin_descuento=costo_lapiz*cantidad_lapiz
 if cantidad_lapiz>=1000:
-    sin_descuento=costo_lapiz*cantidad_lapiz
     descuento=(sin_descuento*7)/100
     costo_total=sin_descuento-descuento
     print(f"El monto total a pagar es de: ${costo_total}")
 else:
-    sin_descuento=costo_lapiz*cantidad_lapiz
     print(f"El monto total a pagar es de: ${sin_descuento}")
 
 #20
